@@ -20,7 +20,7 @@ This project, including Module 9 assignment, focused on honing our knowledge and
 - Input file: hawaii.sqlite
 - Source code: SurfsUp_Challenge.ipynb, climate_analysis.ipynb, app.py
 - Image file: png files
-- Software: [SQL Alchemy](https://www.sqlalchemy.org/), [Flask](https://flask.palletsprojects.com/en/2.2.x/), [conda](https://github.com/conda/conda/releases), [Python 3.9](https://docs.python.org/release/3.9.12/), or their newer releases.
+- Software: [SQLAlchemy](https://www.sqlalchemy.org/), [Flask](https://flask.palletsprojects.com/en/2.2.x/), [conda](https://github.com/conda/conda/releases), [Python 3.9](https://docs.python.org/release/3.9.12/), or their newer releases.
 
 ### Challenge Overview
 Our goal is to further understand the ETL concepts relevant to relational databases through the use of systematic steps and effective tools that we commonly use when prototyping, modeling, engineering, and exploring databases, which could be applied for uncovering various climate data as well as temperature trends for the months of June and December in Oahu, Hawaii. Our analysis results were required to determine if the surf and ice cream shop business was sustainable year-round. Outline of our deliverables and a written report for presenting our results and analysis summary:
@@ -47,7 +47,7 @@ main branch
   &emsp; |&rarr; [./Data/climate_trends_boxplot.png](./Data/climate_trends_boxplot.png)  
 
 ## Data Engineering and Analysis Results
-By using several Pandas libraries/modules, including Pandas, SQLAlchemy, Matplotlib, and Flask, to extract and transform the year-round climate databases, we were able to explore the weather trends and deliver the required data. We also created Matplotlib plots to enable better visualization of the analysis results that should let us conduct the due diligence and draw more accurate conclusions.
+By using several Python libraries/modules, including Pandas, SQLAlchemy, Matplotlib, and Flask, to extract and transform the year-round climate databases, we were able to explore the weather trends and deliver the required data. We also created Matplotlib plots to enable better visualization of the analysis results that should let us conduct the due diligence and draw more accurate conclusions.
 
 ### Deliverable 1
 The corresponding Jupyter Notebook source codes can be referred in [SurfsUp_Challenge.ipynb](./SurfsUp_Challenge.ipynb) and [climate_analysis.ipynb](./climate_analysis.ipynb). I skipped *Step 2* in the challenge notebook, which was a redundant step to convert to a list, because SQLAlchemy `session.query().all()` returns a list of tuples that can be readily converted to a DataFrame. This statement is also true for compiling December temperatures (*Step 7* in [Deliverable 2](#deliverable-2)), which I double checked by using `type(session.query().all())`.
@@ -79,7 +79,7 @@ Code used for [Deliverable 1](#deliverable-1) can be reused for accomplishing [D
 **Fig. 2 Temperature trends in Oahu, HI for the month of December**
 
 ### Deliverable 3
-To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlined the summary statistics in visual boxplot formats, which hopefully helped to perform the due diligence better. **Table 3** provided the concise comparison of the overall climate trends in Oahu, HI between June and December.
+To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlined the summary statistics of June and December in visual boxplot formats, which hopefully helped to perform the due diligence better. **Table 3** provided the concise comparison of the overall climate trends in Oahu, HI between June and December.
 
 ```
 # Create a box-and-whisker plot for June vs December temps
@@ -112,7 +112,7 @@ pd.merge(jun_df.describe(), dec_df.describe(), left_index=True, right_index=True
 ```
 
 ![Fig. 3](./Data/climate_trends_boxplot.png)\
-**Fig. 3 Temperature boxplots for the month of December**
+**Fig. 3 Temperature boxplots for the month of June and December**
 
 **Table 3. Summary statistics of climate trends in Oahu, HI**\
 ![Table 3](./Data/climate_summary_stats.png)
@@ -146,7 +146,7 @@ All deliverables have been completed and summarized according to Module 9 assign
 [json - JSON encoder and decoder](https://docs.python.org/3/library/json.html)\
 [How to change Order of Columns in Pandas DataFrame?](https://pythonexamples.org/how-to-change-order-of-columns-in-pandas-dataframe/#:~:text=Change%20Order%20of%20DataFrame%20Columns%20in%20Pandas&text=You%20can%20change%20the%20order,rearranged%20column%20list%20as%20argument.&text=The%20reindex()%20function%20returns,the%20given%20order%20of%20columns.)\
 [Python - datetime date objects](https://docs.python.org/3.9/library/datetime.html#datetime.date)\
-[SQL Alchemy](https://www.sqlalchemy.org/)\
+[SQLAlchemy](https://www.sqlalchemy.org/)\
 [Option to disable autobegin?](https://github.com/sqlalchemy/sqlalchemy/discussions/6921)\
 [Using OR in SQLAlchemy](https://stackoverflow.com/questions/7942547/using-or-in-sqlalchemy)\
 [Flask](https://flask.palletsprojects.com/en/2.2.x/)\
