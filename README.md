@@ -79,7 +79,7 @@ Code used for [Deliverable 1](#deliverable-1) can be reused for accomplishing [D
 **Fig. 2 Temperature trends in Oahu, HI for the month of December**
 
 ### Deliverable 3
-To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlined the summary statistics of June and December in visual boxplot formats, which hopefully helped to perform the due diligence better. **Table 3** provided the concise comparison of the overall climate trends in Oahu, HI between June and December.
+To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlined the summary statistics of June and December temperatures in visual boxplot formats, which hopefully helped to perform the due diligence better. **Table 3** provided the concise comparison of the overall climate trends in Oahu, HI between June and December.
 
 ```
 # Create a box-and-whisker plot for June vs December temps
