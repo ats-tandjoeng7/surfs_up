@@ -61,7 +61,7 @@ jun_df = pd.DataFrame(results, columns=['date', 'June Temps'])
 jun_df.describe()
 ```
 
-**Table 1** showed the summary statistics of temperature trends in Oahu, HI for the month of June. The graphs in Fig. 1 provided further visualization of temperature trends for the corresponding month across several years.
+**Table 1** shows the summary statistics of temperature trends in Oahu, HI for the month of June. The graphs in Fig. 1 provided further visualization of temperature trends for the corresponding month across several years.
 
 **Table 1. Summary statistics of June temperature trends in Oahu, HI**\
 ![Table 1](./Data/climate_jun_summary_stats.png)
@@ -70,7 +70,7 @@ jun_df.describe()
 **Fig. 1 Temperature trends in Oahu, HI for the month of June**
 
 ### Deliverable 2
-Code used for [Deliverable 1](#deliverable-1) can be reused for accomplishing [Deliverable 2](#deliverable-2) with just a few minor revisions. **Table 2** showed the summary statistics of temperature trends in Oahu, HI for the month of December. The graphs in Fig. 2 provided further visualization of temperature trends for the corresponding month across several years.
+Code used for [Deliverable 1](#deliverable-1) can be reused for accomplishing [Deliverable 2](#deliverable-2) with just a few minor revisions. **Table 2** shows the summary statistics of temperature trends in Oahu, HI for the month of December. The graphs in Fig. 2 provide further visualization of temperature trends for the corresponding month across several years.
 
 **Table 2. Summary statistics of December temperature trends in Oahu, HI**\
 ![Table 2](./Data/climate_dec_summary_stats.png)
@@ -79,7 +79,7 @@ Code used for [Deliverable 1](#deliverable-1) can be reused for accomplishing [D
 **Fig. 2 Temperature trends in Oahu, HI for the month of December**
 
 ### Deliverable 3
-To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlined the summary statistics of June and December temperatures in visual boxplot formats, which hopefully helped to perform the due diligence better. **Table 3** provided the concise comparison of the overall climate trends in Oahu, HI between June and December.
+To further explore insightful data analytics and visualizations, I wrote some extra codes that might be unique as below. Fig. 3 outlines the summary statistics of June and December temperatures in visual boxplot formats, which hopefully helps to perform the due diligence better. **Table 3** provides the concise comparison of the overall climate trends in Oahu, HI between June and December.
 
 ```
 # Create a box-and-whisker plot for June vs December temps
